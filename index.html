@@ -1,39 +1,40 @@
-Skip to content
-Navigation Menu
-serhatramay
-yakindaki-camiler
-
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-yakindaki-camiler
-/
-index.html
-in
-main
-
-Edit
-
-Preview
-Indent mode
-
-Spaces
-Indent size
-
-2
-Line wrap mode
-
-No wrap
-Editing index.html file contents
-1
-index.html
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-New File at / · serhatramay/yakindaki-camiler
-  
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakındaki Camiler - İstanbul</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕌 Yakındaki Camiler</h1>
+            <p>Konumunuza yakın camileri keşfedin</p>
+        </header>
+        
+        <div class="controls">
+            <button id="findMosques" class="btn-primary">
+                📍 Yakındaki Camileri Bul
+            </button>
+            <button id="currentLocation" class="btn-secondary">
+                🎯 Konumumu Göster
+            </button>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div id="mosqueList" class="mosque-list">
+            <h3>Yakındaki Camiler</h3>
+            <div id="mosqueItems"></div>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Camiler yüklüyor...</p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
